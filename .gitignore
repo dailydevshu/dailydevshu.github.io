@@ -1,3 +1,11 @@
 ## IDE
 .idea
 .vscode
+
+## Generated, cache and vendor files
+_site
+/var/
+/vendor/
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
