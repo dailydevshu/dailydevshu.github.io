@@ -6,6 +6,8 @@
 _site
 /var/
 /vendor/
+/node_modules
+/assets/build/*
 .jekyll-cache
 .jekyll-metadata
 .sass-cache
