@@ -14,9 +14,16 @@ COPY . /var/www/app
 RUN apt update \
     && apt install -y nano \
     && apt install -y ruby-full \
-    && apt-get install -y build-essential zlib1g-dev g++ zip nodejs yarn \
+    && apt-get install -y build-essential zlib1g-dev g++ zip \
     && gem install jekyll bundler \
     && gem install minima jekyll-feed jekyll-seo-tag jekyll-paginate-v2
+
+RUN apt install -y aptitude \
+    && rm -rf /etc/apt/sources.list.d/nodesource.list \
+    && bash ./docker/scripts/nodesource_setup.sh \
+    && apt install -y nodejs \
+    && aptitude install -y npm \
+    && npm install yarn --location=global
 
 RUN gem update --system \
     && bundle install
