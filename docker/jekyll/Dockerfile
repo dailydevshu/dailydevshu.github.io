@@ -16,7 +16,7 @@ RUN apt update \
     && apt install -y ruby-full \
     && apt-get install -y build-essential zlib1g-dev g++ zip nodejs yarn \
     && gem install jekyll bundler \
-    && gem install minima jekyll-feed jekyll-seo-tag
+    && gem install minima jekyll-feed jekyll-seo-tag jekyll-paginate-v2
 
 RUN gem update --system \
     && bundle install
