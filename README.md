@@ -35,6 +35,10 @@ docker-compose exec jekyll /bin/bash
 ## Jekyll build
 
 ```shell
+cd docker
+
+docker-compose up -d
 docker-compose exec jekyll /bin/bash
+
 jekyll build
 ```

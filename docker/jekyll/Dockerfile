@@ -23,4 +23,4 @@ RUN gem update --system \
 
 USER $UNAME
 
-EXPOSE 9000
+EXPOSE 4000
