@@ -1,0 +1,15 @@
+{
+  "assets/build/app.css": "/assets/build/app.css",
+  "assets/build/app.js": "/assets/build/app.js",
+  "assets/build/runtime.js": "/assets/build/runtime.js",
+  "assets/build/fonts/bootstrap-icons.woff?": "/assets/build/fonts/bootstrap-icons.7ff3ca6f.woff",
+  "assets/build/fonts/bootstrap-icons.woff2?": "/assets/build/fonts/bootstrap-icons.f2539a50.woff2",
+  "assets/build/fonts/varela-round-latin-ext-400.woff": "/assets/build/fonts/varela-round-latin-ext-400.e3fe189e.woff",
+  "assets/build/fonts/varela-round-latin-ext-400.woff2": "/assets/build/fonts/varela-round-latin-ext-400.df8b05df.woff2",
+  "assets/build/fonts/oxygen-latin-ext-700.woff": "/assets/build/fonts/oxygen-latin-ext-700.c6caf7b3.woff",
+  "assets/build/fonts/oxygen-latin-ext-400.woff": "/assets/build/fonts/oxygen-latin-ext-400.f74ae3d2.woff",
+  "assets/build/fonts/oxygen-latin-ext-300.woff": "/assets/build/fonts/oxygen-latin-ext-300.14963663.woff",
+  "assets/build/fonts/oxygen-latin-ext-700.woff2": "/assets/build/fonts/oxygen-latin-ext-700.e5e70489.woff2",
+  "assets/build/fonts/oxygen-latin-ext-400.woff2": "/assets/build/fonts/oxygen-latin-ext-400.61a74c30.woff2",
+  "assets/build/fonts/oxygen-latin-ext-300.woff2": "/assets/build/fonts/oxygen-latin-ext-300.93269c07.woff2"
+}

@@ -1,0 +1,30 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ page.title }}</title>
+
+        <link rel="stylesheet" href="{{ '/assets/build/app.css' | absolute_url }}">
+    </head>
+    <body>
+        {% include navigation.html %}
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+
+        {% include footer.html %}
+
+        <script src="{{ '/assets/build/runtime.js' | absolute_url }}"></script>
+        <script src="{{ '/assets/build/app.js' | absolute_url }}"></script>
+    </body>
+</html>

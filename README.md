@@ -40,5 +40,10 @@ cd docker
 docker-compose up -d
 docker-compose exec jekyll /bin/bash
 
+yarn install
+yarn encore production
+
 jekyll build
+# with local config file ( in dev environment )
+jekyll build --config _config.yml,_config.local.yml --trace
 ```

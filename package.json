@@ -1,0 +1,24 @@
+{
+    "dependencies": {
+        "yarn": "^1.22.17"
+    },
+    "devDependencies": {
+        "@openfonts/varela-round_latin-ext": "^1.44.2",
+        "@openfonts/merriweather_latin-ext": "^1.44.2",
+        "@openfonts/montserrat_latin-ext": "^1.44.2",
+        "@openfonts/oxygen_latin-ext": "^1.44.2",
+        "@popperjs/core": "^2.11.2",
+        "@symfony/webpack-encore": "^1.8.1",
+        "bootstrap": "^5.1.3",
+        "bootstrap-icons": "^1.8.0",
+        "core-js": "^3.21.0",
+        "file-loader": "^6.0.0",
+        "highlight.js": "^11.4.0",
+        "jquery": "^3.6.0",
+        "popper.js": "^1.16.1",
+        "sass": "^1.49.7",
+        "sass-loader": "^12.0.0",
+        "uuid": "^8.3.2",
+        "webpack-notifier": "^1.6.0"
+    }
+}

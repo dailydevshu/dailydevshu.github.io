@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="mt-25 mb-25">
+    <h1>{{ page.profile.short_introduction }}</h1>
+
+    <div>{{ page.profile.position }}</div>
+
+    <div>
+        {% for social in page.profile.socials %}
+            <a class="text-decoration-none mr-5" href="{{ social.link }}" target="_blank">
+                <i class="{{ social.icon }}" title="{{ social.name }}"></i>
+            </a>
+        {% endfor %}
+    </div>
+    <div>
+        {{ content | newline_to_br }}
+    </div>
+</div>

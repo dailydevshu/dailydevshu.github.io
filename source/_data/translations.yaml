@@ -1,0 +1,15 @@
+label:
+    home: Kezdőlap
+    posts: Bejegyzések
+    tags: címkék
+    categories: kategóriák
+    sections: Szekciók
+    copyright: "© 2022"
+
+message:
+    no_content: Tartalom nem található.
+
+error:
+    page_not_found:
+        title: "404 - Az erőforrás nem található."
+        message: A kért oldal nem található.

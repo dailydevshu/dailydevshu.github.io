@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand animated-text" href="{{ site.url | absolute_url }}">{{ site.title }}</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                {% for item in site.data.navigation %}
+                    <li class="nav-item">
+                        <a class="nav-link nav-menu-item {% if page.url == item.link %}active{% endif %}" aria-current="page" href="{{ item.link | absolute_url }}">{{ item.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

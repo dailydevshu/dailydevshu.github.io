@@ -1,0 +1,24 @@
+---
+permalink: /404
+layout: default
+title: 404 - A tartalom nem található!
+---
+
+<div class="flex--w100-h100">
+    <div class="no-content-wrapper">
+        <h1 class="animated-text">404</h1>
+
+        <p>{{ site.data.translations.error.page_not_found.message }}</p>
+
+        <div class="mt-3">
+            <a class="text-decoration-none decorated-link" href="{{ site.url | absolute_url }}">
+                {{ site.data.translations.label.home }}
+            </a>
+            {% for item in site.data.navigation %}
+                <a class="text-decoration-none decorated-link" href="{{ item.link | absolute_url }}">
+                    {{ item.name }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="mt-30">
+    <h1 class="animated-text">{{ page.title }}</h1>
+
+    <div class="mt-2">
+        <span><i class="bi bi-calendar4-week"></i> {{ page.date | date: "%Y-%m-%d" }}</span>
+        <span>
+            {% assign user = site.users | where: 'profile.nickname', page.users | first %}
+            {% if user %}
+                | <i class="bi bi-person-circle"></i> {{ user.profile.nickname }} |
+            {% endif %}
+        </span>
+
+        {% for tag in page.tags %}
+            {% assign filtered_tag = site.tags | where: 'short_name', tag | first %}
+            <span>
+                <a href="{{ filtered_tag.url | absolute_url }}" class="text-decoration-none">
+                    {{ filtered_tag.name }}
+                </a>
+            </span>
+        {% endfor %}
+    </div>
+
+    <div>
+        {% for category in page.categories %}
+            {% assign filtered_category = site.categories | where: 'short_name', category | first %}
+            <a href="{{ filtered_category.url | absolute_url }}" class="text-decoration-none">
+                <span>{{ filtered_category.name }}</span>
+            </a>
+        {% endfor %}
+    </div>
+
+    <div>
+        {{ content }}
+    </div>
+</div>

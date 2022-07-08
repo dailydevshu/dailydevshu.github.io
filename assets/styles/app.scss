@@ -1,0 +1,204 @@
+@use "sass:string";
+
+// Import vendor files
+
+@import "~bootstrap/scss/bootstrap";
+@import "color";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~highlight.js/styles/github-dark-dimmed.css";
+@import "~@openfonts/varela-round_latin-ext/index.css";
+@import "@openfonts/oxygen_latin-ext";
+
+// Default styles and helpers
+
+body {
+    font-family: Oxygen, monospace;
+    font-size: 13pt;
+    color: #282828;
+    text-align: justify;
+    letter-spacing: .4px;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    letter-spacing: .1px;
+}
+
+h2 {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+p {
+    margin: 15px 0;
+
+    // Images
+
+    img {
+        @extend .img-fluid, .rounded, .mx-auto, .d-block;
+        margin: 20px 0;
+    }
+
+    .image__title {
+        display: block;
+        margin: 5px 0;
+        font-family: var(--bs-font-monospace);
+        text-align: center;
+        font-style: italic;
+        color: $gray-500;
+    }
+}
+
+.flex--w100-h100 {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+a,
+a:link,
+a:visited,
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    color: #282828 !important;
+
+    &:hover {
+        background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #B8405E 50%);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 3s ease infinite;
+    }
+}
+
+.animated-text {
+    font-style: normal;
+    background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #B8405E 50%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+}
+
+.decorated-link,
+.decorated-link:link,
+.decorated-link:visited {
+    margin-right: 10px;
+}
+
+.mt-5 { margin-top: 5px; }
+.mt-25 { margin-top: 25px; }
+.mt-30 { margin-top: 30px; }
+.mt-50 { margin-top: 50px; }
+.mb-25 { margin-bottom: 25px; }
+.mr-5 { margin-right: 5px; }
+
+// Animations
+
+@keyframes gradient {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+// Pre- and code blocks
+
+pre {
+    position: relative;
+    margin: 20px 0 20px 0;
+    border-radius: .4rem;
+    font-size: inherit;
+
+    .code__language {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        float: right;
+        text-align: right;
+        color: $gray-500;
+
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+// Background
+
+.bg {
+    &-dark-blush {
+        background: #B8405E;
+    }
+
+    &-faux-jacarta {
+        background: #313552;
+    }
+}
+
+// Blockquotes
+
+blockquote {
+    background: $gray-100;
+    border-left: 6px solid $gray-300;
+    margin:	1.5em 0;
+    padding: 1em 20px;
+    font-size: 0.9em;
+    direction: ltr;
+    color: $gray-600;
+
+    p {
+        display: inline;
+    }
+}
+
+// List group
+
+.list-group {
+    text-align: left;
+}
+
+// Home
+
+.home {
+    @media (max-width: 768px) {
+        padding: 25px;
+    }
+}
+
+.profile-image-container {
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    padding: 15px 0 0 25px;
+
+    img {
+        max-width: 180px;
+        border-radius: 50%;
+    }
+}
+
+.no-content-wrapper {
+    @media (max-width: 768px) {
+        padding: 15px;
+    }
+}
+
+// Paginator
+
+.page-item {
+    &.active {
+        .page-link {
+            color: white !important;
+        }
+    }
+}
