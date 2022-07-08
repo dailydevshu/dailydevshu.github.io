@@ -25,7 +25,8 @@ RUN apt install -y aptitude \
     && aptitude install -y npm \
     && npm install yarn --location=global
 
-RUN gem update --system \
+RUN cd docs  \
+    && gem update --system \
     && bundle install
 
 USER $UNAME

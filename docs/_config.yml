@@ -3,7 +3,6 @@ description: Minden, ami fejlesztés...
 url: "https://dailydevs.hu"
 baseurl: ""
 
-source: ./docs/
 destination: ./public
 
 collections:
@@ -74,6 +73,8 @@ exclude:
     - .gitkeep
     - .sass-cache/
     - .jekyll-cache/
+    - Gemfile
+    - Gemfile.lock
 
 kramdown:
     syntax_highlighter_opts:

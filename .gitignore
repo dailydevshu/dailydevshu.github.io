@@ -4,16 +4,16 @@
 .vscode
 
 ## Local files
-_config.local.override.yml
+/docs/_config.local.override.yml
 
 ## Generated and vendor files
-public/*
-!public/.gitkeep
+docs/public/*
+!docs/public/.gitkeep
 /vendor/
 /node_modules
 
 # Cache files
 /var/
-/docs/.sass-cache
-/docs/.jekyll-cache
-/docs/.jekyll-metadata
+docs/.sass-cache
+docs/.jekyll-cache
+docs/.jekyll-metadata
