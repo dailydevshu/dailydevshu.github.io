@@ -3,7 +3,7 @@ description: Minden, ami fejlesztés...
 url: "https://dailydevs.hu"
 baseurl: ""
 
-source: ./source/
+source: ./docs/
 destination: ./public
 
 collections:
